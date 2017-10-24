@@ -7,13 +7,9 @@ body{
 
 header{
     /* Visualmente no pasa nada.Se mueve en relacion a su posicion inicial */
-    position: relative;
+    /*position: relative;*/
 }
 
-img{
-    
-    width: 200px;
-}
 /*
 div h3{
     position: absolute;
@@ -21,17 +17,31 @@ div h3{
     right: 0;
     bottom:0;
 }*/
-div{
+img{
+    
+    width: 200px;
+}
+figure{
+    margin:0;
+    border: 2px solid red;
+    display: inline-block;
     position: relative;
-    color:#444;
+}
+figcaption{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+    width: 100%;
+}
+div{
+    
+    background:#444;
+    float: left;
 }
 section{
-    position: relative;
-    border: 2px dashed steelblue;
     
+    border: 2px dashed steelblue;
+    width: 800px;
 }
-h3{
-    position: absolute;
-    right: 0;
-    bottom:0;
-}
+    
