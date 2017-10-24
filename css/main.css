@@ -10,23 +10,26 @@ header{
     /*position: relative;*/
 }
 
-/*
-div h3{
-    position: absolute;
- 
-    right: 0;
-    bottom:0;
-}*/
-img{
-    
-    width: 200px;
-}
 figure{
     margin:0;
     border: 2px solid red;
     display: inline-block;
     position: relative;
 }
+
+/* Seleccione y aplique estilo al primer elemento secundario de cada elemento <figure>: */
+
+figure > :first-child {
+    width: 300px;
+    height: 100%;
+}
+
+
+body section:first-child{
+    margin: 30px 50px 0 70px;
+  
+  }
+
 figcaption{
     position:absolute;
     right: 0;
@@ -34,14 +37,18 @@ figcaption{
     color: white;
     width: 100%;
 }
-div{
-    
-    background:#444;
-    float: left;
-}
+
 section{
     
     border: 2px dashed steelblue;
-    width: 800px;
+    width: 750px;
 }
     
+footer
+{
+    
+    width:auto;
+    height:150px;
+    background-color:black;
+    color:white;
+}
