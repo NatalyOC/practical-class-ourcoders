@@ -1,4 +1,22 @@
 /* setear archivos */
 body{
+    /* hacemos que el ancho espeficado sea equivalente al ancho total */
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+}
+
+header{
+    /* Visualmente no pasa nada.Se mueve en relacion a su posicion inicial */
+    position: relative;
+}
+
+img{
+    width: 200px;
+}
+
+div h3{
+
+}
+div{
+    
 }
