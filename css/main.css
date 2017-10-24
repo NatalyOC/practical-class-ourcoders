@@ -11,12 +11,27 @@ header{
 }
 
 img{
+    
     width: 200px;
 }
-
+/*
 div h3{
-
-}
+    position: absolute;
+ 
+    right: 0;
+    bottom:0;
+}*/
 div{
+    position: relative;
+    color:#444;
+}
+section{
+    position: relative;
+    border: 2px dashed steelblue;
     
+}
+h3{
+    position: absolute;
+    right: 0;
+    bottom:0;
 }
