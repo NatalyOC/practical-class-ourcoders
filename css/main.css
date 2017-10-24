@@ -8,11 +8,13 @@ body{
 header{
     /* Visualmente no pasa nada.Se mueve en relacion a su posicion inicial */
     /*position: relative;*/
+    margin: 10px;
 }
 
 figure{
-    margin:0;
-    border: 2px solid red;
+    margin:10px;
+    border: 0px;
+
     display: inline-block;
     position: relative;
 }
@@ -20,35 +22,33 @@ figure{
 /* Seleccione y aplique estilo al primer elemento secundario de cada elemento <figure>: */
 
 figure > :first-child {
-    width: 300px;
-    height: 100%;
+    width: 250px;
+    border:0;
+    height: 250px;
+    
+    
 }
 
 
-body section:first-child{
-    margin: 30px 50px 0 70px;
-  
-  }
-
 figcaption{
     position:absolute;
-    right: 0;
-    bottom: 0;
+    right: 10px;
+    bottom: 10px;
     color: white;
-    width: 100%;
+    
 }
 
 section{
     
-    border: 2px dashed steelblue;
-    width: 750px;
+    /*border: 2px dashed steelblue;*/
+    width: 950px;
 }
     
 footer
 {
     
     width:auto;
-    height:150px;
+    height:50px;
     background-color:black;
     color:white;
 }
