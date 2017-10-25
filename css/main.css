@@ -1,10 +1,12 @@
 /* setear archivos */
+/*Establecemos el ancho y tipo de letra por medio de el selector de etiqueta*/
 body{
     /* hacemos que el ancho espeficado sea equivalente al ancho total */
     box-sizing: border-box;
+    /* establecemos el tipo de letra */
     font-family: 'Raleway', sans-serif;
 }
-
+/* Establecemos un margen al encabezado */
 header{
     /* Visualmente no pasa nada.Se mueve en relacion a su posicion inicial */
     /*position: relative;*/
@@ -12,19 +14,21 @@ header{
 }
 
 figure{
-    margin:10px;
+    
     border: 0px;
-
-    display: inline-block;
+    /* Esta propiedad hace que el elemento de bloque */
+    display: inline-block; 
+    margin:10px;
     position: relative;
 }
 
 /* Seleccione y aplique estilo al primer elemento secundario de cada elemento <figure>: */
-
+/* Por medio de la pseudo-clase */
 figure > :first-child {
-    width: 250px;
     border:0;
     height: 250px;
+    opacity: 0.7;
+    width: 250px;
     
     
 }
@@ -39,16 +43,17 @@ figcaption{
 }
 
 section{
-    
-    /*border: 2px dashed steelblue;*/
     width: 950px;
+    
 }
     
 footer
 {
-    
-    width:auto;
-    height:50px;
     background-color:black;
+    bottom: 0;
     color:white;
+    height:50px;
+    /* Esta propiedad deja fijo al elemento,pierde el espacio que ocupa y su eje de coordenadas es en relacion del navegador */
+    position: fixed;
+    width:100%;/*con respecto al navegador*/
 }
