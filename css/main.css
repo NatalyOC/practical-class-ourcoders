@@ -8,13 +8,10 @@ body{
 }
 /* Establecemos un margen al encabezado */
 header{
-    /* Visualmente no pasa nada.Se mueve en relacion a su posicion inicial */
-    /*position: relative;*/
     margin: 10px;
 }
 
 figure{
-    
     border: 0px;
     /* Esta propiedad hace que el elemento de bloque */
     display: inline-block; 
@@ -33,20 +30,22 @@ figure > :first-child {
     
 }
 
-
+/*Establecemos la posicion y color de la etiqueta por medio del selector de etiqueta */
 figcaption{
-    position:absolute;
-    right: 10px;
+    
     bottom: 10px;
     color: white;
+    /*Pierde su espacio en el flujo, sus coordenadas se definen según su ancestro posicionado y si niguno esta posicionado se calcula respecto al body*/
+    position:absolute;
+    right: 10px;
     
 }
-
+/*Establecemos el ancho  de la etiqueta por medio del selector de etiqueta */
 section{
     width: 950px;
     
 }
-    
+/*Establecemos el pie de pagina por medio del selector de etiquetas*/ 
 footer
 {
     background-color:black;
@@ -56,4 +55,17 @@ footer
     /* Esta propiedad deja fijo al elemento,pierde el espacio que ocupa y su eje de coordenadas es en relacion del navegador */
     position: fixed;
     width:100%;/*con respecto al navegador*/
+}
+/*
+Establecemos una línea horizontal parcial por debajo del encabezado por medio de
+*/
+div{
+    
+    background-color: #262b30;
+    height: 5px;
+    left: 10px;
+    margin-bottom:25px;
+    /* Visualmente no pasa nada.Se mueve en relacion a su posicion inicial */
+    position:relative;
+    width: 70px;
 }
